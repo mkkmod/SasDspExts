@@ -1,0 +1,9 @@
+/ExtLibs/NuGet
+obj
+bin
+*.suo
+*.DotSettings.user
+*.DotSettings
+/Devices/IMonApp/_IbsenBin — skrót.lnk
+/Devices/IMonApp/_IMonAppRel — skrót.lnk
+/Dsp/GAlgAnConsoleApp/GAlgAnConsoleApp.csproj.user

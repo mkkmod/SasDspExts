@@ -1,0 +1,49 @@
+# D:\Badania\Opto\Tms\xskl_ses_2019_08_28__18-08-03_m589_sav_2019_08_28__18-17-31\iMonSession.xskl
+# D:/Badania/Opto/Tms_samp/xskl_ses_2018_03_28__14-59-04_m989_sav_2018_03_28__15-23-01/iMonSession.xskl
+# D:\Badania\Opto\Tms_samp\xskl_ses_2019_03_04__08-44-04_m867_sav_2019_03_04__09-05-33\iMonSession.xskl
+
+# F:/_OPTO/TmsFull/Received/xskl_ses_2018_06_14__19-52-46_m178_sav_2018_06_14__20-22-30/iMonSession.xskl
+# F:/_OPTO/TmsFull/Received/xskl_ses_2018_05_30__14-01-52_m261_sav_2018_05_30__14-04-32/iMonSession.xskl
+
+# /home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2018_04_04__19-58-49_m760_sav_2018_04_04__20-21-59/iMonSession.xskl
+# /home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_01_13__14-20-15_m833_sav_2019_01_13__14-41-57/iMonSession.xskl
+
+
+
+# poprawki rep-pad
+# /home/mkrej/QnapSmb/badania2018/Received//iMonSession.xskl
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_06_28__14-17-09_m850_sav_2019_06_28__14-31-25/iMonSession.xskl
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_06_28__12-51-07_m318_sav_2019_06_28__13-17-46/iMonSession.xskl
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_07_12__14-30-03_m774_sav_2019_07_12__14-53-06/iMonSession.xskl
+
+
+# --- ad v2
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_07_07__09-55-24_m678_sav_2019_07_07__10-31-39/iMonSession.xskl
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_06_29__15-42-45_m114_sav_2019_06_29__15-55-14/iMonSession.xskl
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_07_07__09-55-24_m678_sav_2019_07_07__10-31-39/iMonSession.xskl
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_07_04__18-00-42_m253_sav_2019_07_04__18-11-12/iMonSession.xskl
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_07_07__14-16-16_m283_sav_2019_07_07__14-52-14/iMonSession.xskl
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_07_04__18-41-19_m729_sav_2019_07_04__18-55-38/iMonSession.xskl
+
+
+# --- ad v3
+
+# 27539 ok + spory HR
+# /home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_07_18__17-20-07_m681_sav_2019_07_18__17-32-48/iMonSession.xskl
+
+# 20429-K , szum bo piki są często podwójne, pewnie fitr by pomógł 
+# /home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2018_04_04__19-58-49_m760_sav_2018_04_04__20-21-59/iMonSession.xskl
+
+# 27220 brak jednego piku ok. 480s
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2019_07_02__11-41-50_m524_sav_2019_07_02__12-00-32/iMonSession.xskl
+    
+ 
+# --- targ v2
+
+# 20972-M-H
+#/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2018_06_15__16-48-22_m479_sav_2018_06_15__17-12-25/iMonSession.xskl
+
+/home/mkrej/QnapSmb/badania2018/Received/xskl_ses_2018_03_28__11-25-15_m145_sav_2018_03_28__11-49-22/iMonSession.xskl
+
+
+

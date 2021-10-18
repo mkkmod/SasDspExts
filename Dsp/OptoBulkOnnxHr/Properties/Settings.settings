@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OptoBulkOnnxHr.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SourceDirPart" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Badania\Opto\Tms_samp</Value>
+    </Setting>
+    <Setting Name="DestDirPart" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Badania\Opto\Tms_samp_res</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

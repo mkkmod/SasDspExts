@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\ExtLibs\NuGet\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\..\ExtLibs\NuGet\NUnit.3.12.0\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAD0ACBA-3CE8-4632-BC13-BC75AE873AB9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SasO.Dsp.OptoOnnxHrAlg</RootNamespace>
+    <AssemblyName>OptoOnnxHrAlg</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\ExtLibs\NuGet\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\..\ExtLibs\NuGet\NUnit.3.12.0\lib\net40\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OnxxHrAlgTests.cs" />
+    <Compile Include="OptoHrAlgComp.cs" />
+    <Compile Include="OptoHrAlgCompParam.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OptoHrAlgCompPlain.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Signals\ExtSignalTools\ExtSignalTools.csproj">
+      <Project>{aee951ab-c60a-4588-b899-56354927e5f4}</Project>
+      <Name>ExtSignalTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DetAlgsCommon\DetAlgsCommon.csproj">
+      <Project>{3d80b500-2d4d-46c6-a55a-f636f526cecc}</Project>
+      <Name>DetAlgsCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExtDspLib\ExtDspLib.csproj">
+      <Project>{0d7f2995-3156-4187-8739-4971f4250c5b}</Project>
+      <Name>ExtDspLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OrtoLink\KodyZrodlowe\Lib\SasLib\SasLib.csproj">
+      <Project>{a7e4d872-fb90-4d4d-8a77-1dc7018cb620}</Project>
+      <Name>SasLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OrtoLink\KodyZrodlowe\Signals\DspLib\DspLib.csproj">
+      <Project>{5407979f-8149-474e-8388-2289f5465aec}</Project>
+      <Name>DspLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OrtoLink\KodyZrodlowe\Signals\SignalsLib\SignalsLib.csproj">
+      <Project>{b7e2d0db-cd6a-42bc-aa4f-01fcda7eb0c7}</Project>
+      <Name>SignalsLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\ExtLibs\NuGet\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\ExtLibs\NuGet\NUnit.3.12.0\build\NUnit.props'))" />
+  </Target>
+</Project>

@@ -1,0 +1,51 @@
+﻿- w MonoDevelop w OrtoExtsGitRepo założyłem nowy proj OnnxTest0 
+próba załadowania modelu ONNX z Pythona w .net/mono
+
+  >> /home/mkrej/dyskE/MojePrg/SAS/OrtoExtsGitRepo/Dsp/OnnxTest0/OnnxProg0.cs
+  
+ - zainstalowałem nuget-a (apt install) + w monodevelop extensiony do nuget-a
+ - z nuget-a dodałem pakiet ONNX Runtime
+ - zmieniłem wersję ".NET Framework" na 4.5.2
+   - retarget packages
+   - nie pomogło
+ - zmieniłem traget na x64 (!) 
+   - retarget packages
+   - i pomogło !!
+ - skompilował się ale błąd
+    "DllNotFoundException: onnxruntime"
+ - wróciłem do ".NET Framework" na 4.7.1
+     - update packages
+     
+- nie działa pod linux, ale dobrze się kompiluje ta sama binarka 
+  pod win przechodzi ciut dalej:
+  "Could not find an implementation for the node Sigmoid(6)"
+  
+- ad nie działało ładowanie ONNX w Microsoft.ML.OnnxRuntime 
+  "Could not find an implementation for the node Sigmoid(6)"  
+  - udało się odtworzyć w Pythonie (pip install onnxruntime)
+    i minimalny przykład (test_onnxrt_min.py) pokazał że problem był w modelu 
+    - bruździła funkcja .double()  
+  
+- udało się to uruchomić w nowym dotnet 
+  (najpierw trzeba dodać klucz i repo microsoftu)
+  sudo apt install dotnet-sdk-3.1
+  
+  dotnet new console -o myApp
+  cd myApp
+  dotnet add package Microsoft.ML.OnnxRuntime
+  i poszło!!
+  
+  >> _Sharp/_ProbyMoje/OnnxDotNetApp
+  
+- ad "DllNotFoundException: onnxruntime"
+  przekopiowałem 'libonnxruntime.so' z projektu 'dotnet'-a i działa !!!
+  oryginalnie (po 'dotnet add package Microsoft.ML.OnnxRuntime') siedzi tu:
+  ~/.nuget/packages/microsoft.ml.onnxruntime/1.1.2/runtimes/linux-x64/native/libonnxruntime.so
+  
+- po dodaniu kodu od uruchamiania prog wysypuje się na ładowaniu dll
+  w 'References' / 'From Packages' muszę dodawać 'copy local'
+  System.Memory.dll
+  System.Runtime.CompilerServices.Unsafe.dll
+  
+- kompil na windows 7 w VS 2019
+  znowu problemy
